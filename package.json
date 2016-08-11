@@ -1,0 +1,15 @@
+{
+  "name": "csmg-website",
+  "version": "1.0.0",
+  "description": "A website for csmg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Vye",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
