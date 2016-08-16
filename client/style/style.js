@@ -8,5 +8,8 @@ const {width, height, scale} = Dimensions.get("window"),
 export default StyleSheet.create({
     "test": {
         "backgroundColor": "blue"
+    },
+    "another": {
+        "font": 10
     }
 });

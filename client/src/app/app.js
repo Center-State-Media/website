@@ -1,13 +1,9 @@
 angular.module('app', [
-  "timer",
-  "app.auth",
-  "app.race",
-  "ngRoute",
   'ui.bootstrap'
   ])
 
 .controller('mainController', function($scope) {
-  scope.bigData = {};
+  $scope.bigData = {};
 
   $scope.bigData.breakfast = false;
   $scope.bigData.lunch = false;
