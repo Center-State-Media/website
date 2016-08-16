@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
   </head>
 
-  <body ng-app="app" ng-controller="appCtrl">
-    <md-toolbar>
+  <body ng-app="app" ng-controller="mainController">
+    <!-- <md-toolbar>
       <div class="md-toolbar-tools">
         <md-button>Portfolio</md-button>
         <md-button>About</md-button>
@@ -18,7 +18,23 @@
     </md-toolbar>
     <md-button class="md-raised">Hello There!</md-button>
     <md-button>Test</md-button>
-    <div ui-view></div>
+    <div ui-view></div> -->
+
+    <div class="btn-group" data-toggle="buttons">
+
+    <label class="btn btn-primary" ng-model="bigData.breakfast" btn-checkbox>
+      Breakfast
+    </label>
+
+    <label class="btn btn-primary" ng-model="bigData.lunch" btn-checkbox>
+      Lunch
+    </label>
+
+    <label class="btn btn-primary" ng-model="bigData.dinner" btn-checkbox>
+      Dinner
+    </label>
+
+    </div>
 
     <!-- The ng-view will either show race.html or signin.html depending upon the web address -->
     <!-- <div ng-view></div> -->
@@ -29,6 +45,6 @@
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
 
-    <script src="src/app.js"></script>
+    <script src="src/app/app.js"></script>
   </body>
 </html>
