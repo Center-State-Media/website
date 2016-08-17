@@ -1,5 +1,9 @@
 angular.module('app', [
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ui.router',
+  'home',
+  'projects',
+  'about'
   ])
 
 .controller('mainController', function($scope) {
@@ -11,6 +15,33 @@ angular.module('app', [
 
   // COLLAPSE =====================
   $scope.isCollapsed = false;
+})
+
+.config(function($stateProvider, $urlRouterProvider) {
+
+  $urlRouterProvider.otherwise('home')
+
+  $stateProvider
+  .state('home', {
+    url: '/home',
+    templateUrl: '/src/home/home.html',
+    controller: 'homeController'
+  })
+  .state('projects', {
+    url:'/projects',
+    templateUrl: '/src/projects/projects.html',
+    controller: 'projectsController'
+  })
+  .state('about', {
+    url:'/about',
+    templateUrl: '/src/about/about.html',
+    controller: 'aboutController'
+  })
+  .state('clientPortal', {
+    url:'/clientPortal',
+    templateUrl: '/src/clientPortal/clientPortal.html',
+    controller: 'clientPortalController'
+  })
 })
 
 
