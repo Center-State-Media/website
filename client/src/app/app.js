@@ -3,18 +3,27 @@ angular.module('app', [
   'ui.router',
   'home',
   'projects',
-  'about'
+  'about',
+  'contact'
   ])
 
-.controller('mainController', function($scope) {
-  $scope.bigData = {};
+.controller('mainController', function($scope, $uibModal) {
+  $scope.animationsEnabled = true;
 
-  $scope.bigData.breakfast = false;
-  $scope.bigData.lunch = false;
-  $scope.bigData.dinner = false;
+  $scope.contactClick = function() {
+    var modalInstance = $uibModal.open({
+      animation: $scope.animationsEnabled,
+      templateUrl: '/src/contact/contact.html',
+      controller: 'contactController',
+      size: 'lg'
+    });
 
-  // COLLAPSE =====================
-  $scope.isCollapsed = false;
+    // modalInstance.result.then(function (selectedItem) {
+    //   $scope.selected = selectedItem;
+    // }, function () {
+    //   $log.info('Modal dismissed at: ' + new Date());
+    // });
+  }
 })
 
 .config(function($stateProvider, $urlRouterProvider) {

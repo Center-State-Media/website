@@ -1,1 +1,14 @@
-<p>Hey!</p>
+<div class="row">
+  <div class="col-md-2">
+    <button class="btn btn-default" ng-click=projectFilterClick('Architecture')>Architecture</button>
+    <button class="btn btn-default" ng-click=projectFilterClick('Product')>Product</button>
+    <button class="btn btn-default" ng-click=projectFilterClick('Video')>Video</button>
+    <button class="btn btn-default" ng-click=projectFilterClick('Personal')>Personal</button>
+  </div>
+  <div class="col-md-8">
+    <div ng-repeat="projectImage in projectImages | filter: projectImageFilter">
+      <p>{{projectImage}}</p>
+      <img src='{{projectImage.src}}' class="img-responsive img-rounded" alt='{{projectImage.alt}}'>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>CSMG</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
   </head>
 
@@ -25,14 +25,14 @@
            <li><a ui-sref="home">Home</a></li>
            <li><a ui-sref="projects">Projects</a></li>
            <li><a ui-sref="about">About</a></li>
-           <li><a ui-sref="contact">Contact</a></li>
+           <li><a ng-click=contactClick()>Contact</a></li>
            <li><a ui-sref="client">Client Login</a></li>
          </ul>
-       </div><!--/.nav-collapse -->
-     </div>
-   </nav>
+       </div>
+      </div>
+    </nav>
 
-   <div ui-view></div>
+   <div class="container" ui-view></div>
 
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-animate/angular-animate.min.js"></script>
@@ -40,6 +40,7 @@
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
 
+    <script src="src/contact/contact.js"></script>
     <script src="src/home/home.js"></script>
     <script src="src/projects/projects.js"></script>
     <script src="src/about/about.js"></script>
