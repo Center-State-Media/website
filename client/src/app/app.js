@@ -12,7 +12,7 @@ angular.module('app', [
   $scope.animationsEnabled = true;
 
   $scope.contactClick = function() {
-    var modalInstance = $uibModal.open({
+    $uibModal.open({
       animation: $scope.animationsEnabled,
       templateUrl: '/src/contact/contact.html',
       controller: 'contactController',
