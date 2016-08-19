@@ -13,9 +13,14 @@ body {
 }
 
 .centerOptionsBar {
-  top: 50%
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
 }
 
+.optionsBarImages {
+  margin-bottom: 35%
+}
 .homePageImages {
   margin-bottom: 3%
 }
