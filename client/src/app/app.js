@@ -12,6 +12,7 @@ angular.module('app', [
 .controller('mainController', function($scope, $uibModal) {
   $scope.animationsEnabled = true;
 
+  $scope.isCollapsed = true;
   $scope.contactClick = function() {
     $uibModal.open({
       animation: $scope.animationsEnabled,
