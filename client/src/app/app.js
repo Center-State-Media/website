@@ -5,7 +5,8 @@ angular.module('app', [
   'home',
   'projects',
   'about',
-  'contact'
+  'contact',
+  'clientPortal'
   ])
 
 .controller('mainController', function($scope, $uibModal) {

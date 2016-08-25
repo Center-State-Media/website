@@ -27,8 +27,9 @@ angular.module('projects', [
     }
   ];
 
-  $scope.projectFilterClick = function(query) {
+  $scope.projectFilterClick = function(event, query) {
+    console.log(event);
     $scope.projectImageFilter = query;
-    console.log('any');
+
   }
 })

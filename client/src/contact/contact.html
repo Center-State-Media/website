@@ -1,15 +1,15 @@
 <div class="modal-header">
-    <h3 class="modal-title">I'm a modal!</h3>
+    <h3 class="modal-title">Contact Us</h3>
+    <img src='/src/assets/Grapes-25.png' class="img-responsive img-circle " ng-click=closeContactForm()>
+
 </div>
 <div class="modal-body">
-    <ul>
-        <li ng-repeat="item in items">
-            <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
-        </li>
-    </ul>
-    Selected: <b>{{ selected.item }}</b>
+  <form>
+    Name: <input type="text" ng-model="userContact.name" /><br />
+    E-mail: <input type="email" ng-model="userContact.email" /><br />
+    Phone: <input type="tel" ng-model="userContact.phone" /><br />
+    Summary of Interest: <input type="text" ng-model="userContact.interest" /><br />
 </div>
 <div class="modal-footer">
-    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
-    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    <button class="btn btn-primary" type="button" ng-click="submitContactForm()">Submit</button>
 </div>
