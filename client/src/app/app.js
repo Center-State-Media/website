@@ -9,26 +9,12 @@ angular.module('app', [
   'clientPortal'
   ])
 
-.controller('mainController', function($scope, $uibModal, $rootScope) {
+.controller('mainController', function($scope) {
   $scope.animationsEnabled = true;
 
   $scope.isCollapsed = true;
-  $scope.contactClick = function() {
-    $uibModal.open({
-      animation: $scope.animationsEnabled,
-      templateUrl: '/src/contact/contact.html',
-      controller: 'contactController',
-      size: 'lg'
-    });
-  }
 
-    $rootScope.theCurrentYear = new Date().getFullYear();
-
-    // modalInstance.result.then(function (selectedItem) {
-    //   $scope.selected = selectedItem;
-    // }, function () {
-    //   $log.info('Modal dismissed at: ' + new Date());
-    // });
+  $scope.theCurrentYear = new Date().getFullYear();
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -55,6 +41,11 @@ angular.module('app', [
     url:'/clientPortal',
     templateUrl: '/src/clientPortal/clientPortal.html',
     controller: 'clientPortalController'
+  })
+  .state('contact', {
+    url:'/contact',
+    templateUrl: 'src/contact/contact.html',
+    controller: 'contactController'
   })
 })
 
