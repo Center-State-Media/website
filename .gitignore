@@ -3,3 +3,6 @@ node_modules/
 
 # Bower
 client/bower_components
+
+# CSS
+client/style/css

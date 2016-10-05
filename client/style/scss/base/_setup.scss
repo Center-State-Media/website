@@ -3,6 +3,11 @@ body {
   padding-top: 70px;
 }
 
+html {
+    height: 100%;
+    position: relative;
+}
+
 /* Will get rid of underline on hover of links */
 a {
   text-decoration:none;
