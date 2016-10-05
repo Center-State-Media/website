@@ -6,29 +6,28 @@ angular.module('projects', [
   $scope.projectImageFilter = 'Architecture'
   $scope.projectImages = [
     {
-      src: '/src/assets/pineapple.jpg',
+      src: '/src/assets/BrixPix-2.jpg',
       alt: 'A picture',
       keyword: 'Architecture'
     },
     {
-      src: '/src/assets/pineapple.jpg',
+      src: '/src/assets/BrixPix-3.jpg',
       alt: 'A picture',
-      keyword: 'Architecture'
+      keyword: 'Product'
     },
     {
-      src: '/src/assets/pineapple.jpg',
+      src: '/src/assets/BrixPix.jpg',
       alt: 'A picture',
-      keyword: 'Architecture'
+      keyword: 'Video'
     },
     {
       src: '/src/assets/Fruit.png',
       alt: 'Another picture',
-      keyword: 'Product'
+      keyword: 'Personal'
     }
   ];
 
-  $scope.projectFilterClick = function(event, query) {
-    console.log(event);
+  $scope.projectFilterClick = function(query) {
     $scope.projectImageFilter = query;
 
   }
