@@ -21,7 +21,37 @@ angular.module('projects', [
       keyword: 'Video'
     },
     {
-      src: '/src/assets/Fruit.png',
+      src: '/src/assets/BrixPix-3.jpg',
+      alt: 'Another picture',
+      keyword: 'Personal'
+    },
+    {
+      src: '/src/assets/BrixPix-3.jpg',
+      alt: 'A picture',
+      keyword: 'Product'
+    },
+    {
+      src: '/src/assets/BrixPix.jpg',
+      alt: 'A picture',
+      keyword: 'Video'
+    },
+    {
+      src: '/src/assets/BrixPix-3.jpg',
+      alt: 'Another picture',
+      keyword: 'Personal'
+    },
+    {
+      src: '/src/assets/BrixPix-3.jpg',
+      alt: 'A picture',
+      keyword: 'Product'
+    },
+    {
+      src: '/src/assets/BrixPix.jpg',
+      alt: 'A picture',
+      keyword: 'Video'
+    },
+    {
+      src: '/src/assets/BrixPix-3.jpg',
       alt: 'Another picture',
       keyword: 'Personal'
     }
