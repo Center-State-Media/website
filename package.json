@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "",
+    "sass": "node-sass client/style/scss/main.scss client/style/css/style.css",
     "start": "node ./server/server.js"
   },
   "author": "Andrew Vye",
