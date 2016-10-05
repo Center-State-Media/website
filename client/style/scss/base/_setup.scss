@@ -16,8 +16,5 @@ a {
   }
 }
 
-/*To get rid of the resize option and the scrollbars at first*/
-textarea {
-  resize: none;
-  overflow: auto;
-}
+/* Change the cursor when it hovers over an li to be the same whether a button or not*/
+li { cursor: pointer; }
