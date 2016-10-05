@@ -9,7 +9,7 @@ angular.module('app', [
   'clientPortal'
   ])
 
-.controller('mainController', function($scope, $uibModal) {
+.controller('mainController', function($scope, $uibModal, $rootScope) {
   $scope.animationsEnabled = true;
 
   $scope.isCollapsed = true;
@@ -20,13 +20,15 @@ angular.module('app', [
       controller: 'contactController',
       size: 'lg'
     });
+  }
+
+    $rootScope.theCurrentYear = new Date().getFullYear();
 
     // modalInstance.result.then(function (selectedItem) {
     //   $scope.selected = selectedItem;
     // }, function () {
     //   $log.info('Modal dismissed at: ' + new Date());
     // });
-  }
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
