@@ -20,8 +20,10 @@
     </div>
     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
       <div ng-repeat="projectImage in projectImages | filter: projectImageFilter">
-        <img src='{{projectImage.src}}' class="img-responsive imageSpacingBottom" alt='{{projectImage.alt}}'>
-        <iframe ng-if='{{projectImage.video}}' src="https://player.vimeo.com/video/8733915" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <img ng-if="!projectImage.video" src="{{projectImage.src}}" class="img-responsive imageSpacingBottom" alt="{{projectImage.alt}}">
+        <div ng-if="projectImage.video" class="embed-responsive embed-responsive-16by9 imageSpacingBottom">
+          <iframe ng-if="projectImage.video" src="https://player.vimeo.com/video/8733915" class="embed-responsive-item " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>

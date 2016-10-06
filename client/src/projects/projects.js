@@ -8,52 +8,56 @@ angular.module('projects', [
     {
       src: '/src/assets/BrixPix-2.jpg',
       alt: 'A picture',
-      keyword: 'Architecture'
+      keyword: 'Architecture',
+      video: false
     },
     {
       src: '/src/assets/BrixPix-3.jpg',
       alt: 'A picture',
-      keyword: 'Product'
+      keyword: 'Product',
+      video: false
     },
     {
       src: '/src/assets/BrixPix.jpg',
       alt: 'A picture',
-      keyword: 'Video'
+      keyword: 'Video',
+      video: true
     },
     {
       src: '/src/assets/BrixPix-3.jpg',
       alt: 'Another picture',
-      keyword: 'Personal'
+      keyword: 'Personal',
+      video: false
     },
     {
       src: '/src/assets/BrixPix-3.jpg',
       alt: 'A picture',
-      keyword: 'Product'
+      keyword: 'Product',
+      video: false
     },
     {
       src: '/src/assets/BrixPix.jpg',
       alt: 'A picture',
-      keyword: 'Video'
+      keyword: 'Video',
+      video: true
     },
     {
       src: '/src/assets/BrixPix-3.jpg',
       alt: 'Another picture',
-      keyword: 'Personal'
+      keyword: 'Personal',
+      video: false
     },
     {
       src: '/src/assets/BrixPix-3.jpg',
       alt: 'A picture',
-      keyword: 'Product'
-    },
-    {
-      src: '/src/assets/BrixPix.jpg',
-      alt: 'A picture',
-      keyword: 'Video'
+      keyword: 'Product',
+      video: false
     },
     {
       src: '/src/assets/BrixPix-3.jpg',
       alt: 'Another picture',
-      keyword: 'Personal'
+      keyword: 'Personal',
+      video: false
     }
   ];
 
