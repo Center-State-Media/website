@@ -1,21 +1,22 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-      <h3 class="center-text">Contact Us</h3>
+    <div class="col-xs-12 col-sm-10 col-md-8 col-xs-offset-0 col-sm-offset-1 col-md-offset-1">
+      <h2 class="center-text">Contact Us</h3>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-      <p>Lots of text</p>
+    <div class="col-xs-12 col-sm-10 col-md-4 col-xs-offset-0 col-sm-offset-1 col-md-offset-1">
+      <p>Please use the form here for any pricing and booking inquiries. We will be sure to respond to your message as soon as we can.</p>
+      <p>Please let us know as much information as you can regarding your inqury. We look forward to talking with you.</p>
     </div>
-    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+    <div class="col-xs-12 col-sm-10 col-md-5 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
       <form>
-        Name: <input type="text" ng-model="userContact.name" /><br />
-        E-mail: <input type="email" ng-model="userContact.email" /><br />
-        Phone: <input type="tel" ng-model="userContact.phone" /><br />
-        Summary of Interest: <input type="text" ng-model="userContact.interest" /><br />
+        <input type="text" ng-model="userContact.name" class="form-control" placeholder="Name" /><br />
+        <input type="email" ng-model="userContact.email" class="form-control" placeholder="Email"/><br />
+        <input type="tel" ng-model="userContact.phone" class="form-control" placeholder="Phone"/><br />
+        <textarea rows="3" ng-model="userContact.interest" class="form-control" placeholder="Message"></textarea><br />
       </form>
-      <button class="btn btn-primary pull-right" type="button" ng-click="submitContactForm()">Submit</button>
+      <button class="btn btn-primary pull-right" type="button" ng-click="submitContactForm()">Send Message</button>
     </div>
   </div>
 </div>
