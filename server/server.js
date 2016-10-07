@@ -36,6 +36,7 @@ app.get('/contactSubmit', function (req, res) {
   //     res.end('Message Sent');
   //   }
   // });
+  res.end('Message Sent');
 })
 
 

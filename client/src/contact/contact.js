@@ -5,6 +5,8 @@ angular.module('contact', [
 .controller('contactController', function($scope, $http) {
   $scope.userContact = {};
 
+  $scope.messageSentSuccess = false;
+  $scope.messageSentError = false;
 
   $scope.submitContactForm = function() {
     console.log('the ', $scope.userContact);
@@ -18,8 +20,10 @@ angular.module('contact', [
     })
     .then(function(resp) {
       console.log(resp);
+      messageSentSuccess = true;
     }, function(error) {
       console.log(resp);
+      messageSentError = false;
     })
   }
 })
