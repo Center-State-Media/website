@@ -1,9 +1,13 @@
 angular.module('projects', [
-
+  'ui.bootstrap'
 ])
 
 .controller('projectsController', function($scope) {
   $scope.projectImageFilter = 'Architecture'
+
+  $scope.myInterval = 5000;
+  $scope.active = 0;
+
   $scope.projectImages = [
     {
       src: '/src/assets/BrixPix-2.jpg',
@@ -30,7 +34,7 @@ angular.module('projects', [
       video: false
     },
     {
-      src: '/src/assets/BrixPix-3.jpg',
+      src: '/src/assets/BrixPix-2.jpg',
       alt: 'A picture',
       keyword: 'Product',
       video: false
@@ -63,6 +67,5 @@ angular.module('projects', [
 
   $scope.projectFilterClick = function(query) {
     $scope.projectImageFilter = query;
-
   }
 })

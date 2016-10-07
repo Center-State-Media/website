@@ -18,13 +18,18 @@
         </ul>
       </div>
     </div>
-    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-      <div ng-repeat="projectImage in projectImages | filter: projectImageFilter">
-        <img ng-if="!projectImage.video" src="{{projectImage.src}}" class="img-responsive imageSpacingBottom" alt="{{projectImage.alt}}">
-        <div ng-if="projectImage.video" class="embed-responsive embed-responsive-16by9 imageSpacingBottom">
-          <iframe ng-if="projectImage.video" src="https://player.vimeo.com/video/8733915" class="embed-responsive-item " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="col-xs-10 col-sm-10 col-md-9 col-lg-9">
+        <div uib-carousel active="active" interval="myInterval">
+          <div uib-slide ng-repeat="projectImage in projectImages | filter: projectImageFilter" index="$index">
+            <img ng-if="!projectImage.video" src="{{projectImage.src}}" class="img-responsive" alt="{{projectImage.alt}}">
+            <div ng-if="projectImage.video" class="embed-responsive embed-responsive-16by9 imageSpacingBottom">
+              <iframe ng-if="projectImage.video" src="https://player.vimeo.com/video/8733915" class="embed-responsive-item " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <!-- <div class="carousel-caption"> -->
+              <!-- <h4>Slide </h4> -->
+            <!-- </div> -->
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </div>
