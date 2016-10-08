@@ -1,19 +1,20 @@
 .homePageImages {
   margin-bottom: 3%
 }
-
-.backgroundColorFirst {
-  background-color: $primaryBrandColor;
+.whiteFont {
+  color: white;
+}
+.backgroundFirstImage {
+  background-image: url("../../src/assets/BrixPix-2.jpg");
+  background-size: cover;
 }
 
-.backgroundColorSecond {
-  background-color: green;
+.backgroundSecondImage {
+  background-image: url("../../src/assets/BrixPix-3.jpg");
+  background-size: cover;
 }
 
-.backgroundColorThird {
-  background-color: green;
-}
-
-.backgroundColorLast {
-  background-color: black;
+.backgroundThirdImage {
+  background-image: url("../../src/assets/BrixPix.jpg");
+  background-size: cover;
 }
