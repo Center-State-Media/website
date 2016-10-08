@@ -64,3 +64,10 @@
   left: 0;
   right: 0;
 }
+
+/*To remove the border from the collapsed icon*/
+.navbarCollapseIcon {
+  box-shadow: none;
+  border: 0;
+  border-style: none;
+}
