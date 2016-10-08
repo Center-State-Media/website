@@ -5,16 +5,20 @@
   color: white;
 }
 .backgroundFirstImage {
-  background-image: url("../../src/assets/BrixPix-2.jpg");
+  background-image: url("../../src/assets/IMG_7875.jpg");
   background-size: cover;
 }
 
 .backgroundSecondImage {
-  background-image: url("../../src/assets/BrixPix-3.jpg");
+  background-image: url("../../src/assets/BrixPix-2.jpg");
   background-size: cover;
 }
 
 .backgroundThirdImage {
   background-image: url("../../src/assets/BrixPix.jpg");
   background-size: cover;
+}
+
+.backgroundColorLast {
+  background-color: $primaryGray;
 }
