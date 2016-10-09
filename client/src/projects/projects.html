@@ -15,7 +15,7 @@
   </div>
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
-        <div uib-carousel active="active" interval="myInterval">
+        <div uib-carousel template-url="/src/projects/carousel.html" active="active" interval="myInterval">
           <div uib-slide ng-repeat="projectImage in projectImages | filter: projectImageFilter" index="$index">
             <img ng-if="!projectImage.video" src="{{projectImage.src}}" class="img-responsive" alt="{{projectImage.alt}}">
             <div ng-if="projectImage.video" class="embed-responsive embed-responsive-16by9 imageSpacingBottom">
