@@ -9,14 +9,39 @@
   background-size: cover;
 }
 
+.backgroundFirstImageMargin {
+  margin-top: 5%;
+  margin-bottom: 45%;
+}
+
 .backgroundSecondImage {
   background-image: url("../../src/assets/BrixPix-2.jpg");
   background-size: cover;
 }
 
+.backgroundSecondImageMargin {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
 .backgroundThirdImage {
   background-image: url("../../src/assets/BrixPix.jpg");
   background-size: cover;
+}
+
+.backgroundThirdImageMargin {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.backgroundFourthImage {
+  background-image: url("../../src/assets/BrixPix.jpg");
+  background-size: cover;
+}
+
+.backgroundFourthImageMargin {
+  margin-top: 25%;
+  margin-bottom: 25%;
 }
 
 .backgroundColorLast {
