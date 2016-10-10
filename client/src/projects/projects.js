@@ -1,5 +1,6 @@
 angular.module('projects', [
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ngTouch'
 ])
 
 .controller('projectsController', function($scope) {
