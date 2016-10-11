@@ -4,6 +4,25 @@
 .whiteFont {
   color: white;
 }
+
+.blackFont {
+  color: black;
+}
+
+.hero {
+  background: url('../../src/assets/BrixPix-3.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.heroSpacing {
+  margin-top: 45%;
+}
+
+.backgroundRowMargin {
+  margin-top: 5px;
+}
+
 .backgroundFirstImage {
   background-image: url("../../src/assets/IMG_7875.jpg");
   background-size: cover;
