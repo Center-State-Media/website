@@ -32,19 +32,9 @@
   background-size: cover;
 }
 
-.backgroundFirstImageMargin {
-  margin-top: 5%;
-  margin-bottom: 45%;
-}
-
 .backgroundSecondImage {
   background-image: url("../../src/assets/BrixPix-2.jpg");
   background-size: cover;
-}
-
-.backgroundSecondImageMargin {
-  margin-top: 25%;
-  margin-bottom: 25%;
 }
 
 .backgroundThirdImage {
@@ -52,25 +42,19 @@
   background-size: cover;
 }
 
-.backgroundThirdImageMargin {
-  margin-top: 25%;
-  margin-bottom: 25%;
-}
-
-.backgroundFourthImage {
-  background-image: url("../../src/assets/BrixPix.jpg");
-  background-size: cover;
-}
-
-.backgroundFourthImageMargin {
-  margin-top: 25%;
-  margin-bottom: 25%;
+.homePageCalloutText {
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 .backgroundColorFirst {
   background-color: $backgroundColorFirst;
 }
 
-.backgroundColorLast {
+.backgroundColor {
   background-color: rgba(0, 0, 0, .8);
+}
+
+.homePageTextSpacing {
+  margin-top: 65%
 }
