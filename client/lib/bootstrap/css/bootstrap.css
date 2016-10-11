@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (https://getbootstrap.com/customize/?id=5d788074b791c4206eac98505162f6ec)
- * Config saved to config.json and https://gist.github.com/5d788074b791c4206eac98505162f6ec
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/customize/?id=523e8c55949000ccdf8c329177806584)
+ * Config saved to config.json and https://gist.github.com/523e8c55949000ccdf8c329177806584
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -3120,26 +3120,26 @@ fieldset[disabled] .btn-default.focus {
   background-color: #ffffff;
 }
 .btn-primary {
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
   border-color: #ffffff;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #000000;
-  background-color: #e6e6e6;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #bfbfbf;
 }
 .btn-primary:hover {
-  color: #000000;
-  background-color: #e6e6e6;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #e0e0e0;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #000000;
-  background-color: #e6e6e6;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #e0e0e0;
 }
 .btn-primary:active:hover,
@@ -3151,8 +3151,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #000000;
-  background-color: #d4d4d4;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
   border-color: #bfbfbf;
 }
 .btn-primary:active,
@@ -3169,12 +3169,12 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #ffffff;
+  background-color: transparent;
   border-color: #ffffff;
 }
 .btn-primary .badge {
-  color: #ffffff;
-  background-color: #000000;
+  color: transparent;
+  background-color: #ffffff;
 }
 .btn-success {
   color: #ffffff;

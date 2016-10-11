@@ -66,8 +66,8 @@
     "@btn-default-color": "#fff",
     "@btn-default-bg": "#000",
     "@btn-default-border": "#000",
-    "@btn-primary-color": "#000",
-    "@btn-primary-bg": "#fff",
+    "@btn-primary-color": "#fff",
+    "@btn-primary-bg": "transparent",
     "@btn-primary-border": "#fff",
     "@btn-success-color": "#fff",
     "@btn-success-bg": "@brand-success",
@@ -431,5 +431,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "https://getbootstrap.com/customize/?id=5d788074b791c4206eac98505162f6ec"
+  "customizerUrl": "https://getbootstrap.com/customize/?id=523e8c55949000ccdf8c329177806584"
 }
