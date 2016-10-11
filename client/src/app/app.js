@@ -1,7 +1,6 @@
 angular.module('app', [
   'ui.bootstrap',
   'ui.router',
-  'duScroll',
   'home',
   'projects',
   'about',
@@ -48,7 +47,3 @@ angular.module('app', [
     controller: 'contactController'
   })
 })
-
-
-.value('duScrollActiveClass', 'scrollActive')
-.value('duScrollBottomSpy', true);
