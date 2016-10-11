@@ -1,5 +1,5 @@
-<div class="container-fluid navbarSpacing">
-  <div class="row">
+<!-- <div class="container-fluid navbarSpacing"> -->
+  <!-- <div class="row">
     <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2 center-text">
       <p class="text-center hoverCursor" ng-class="{activeProject: projectImageFilter === 'Architecture'}" ng-click=projectFilterClick('Architecture')><b>Architecture</b></p>
     </div>
@@ -12,20 +12,60 @@
     <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 center-text">
       <p class="text-center hoverCursor" ng-class="{activeProject: projectImageFilter === 'Personal'}" ng-click=projectFilterClick('Personal')><b>Personal</b></p>
     </div>
-  </div>
+  </div> -->
+
+  <!-- <div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+      <div class="sidebar-nav-fixed affix centerOptionsBar">
+        <ul class="nav">
+          <li>
+            <p class="" ng-click=projectFilterClick('Architecture')>Architecture</p>
+          </li>
+          <li>
+            <p class="" ng-click=projectFilterClick('Product')>Product</p>
+          </li>
+          <li>
+            <p class="" ng-click=projectFilterClick('Video')>Video</p>
+          </li>
+          <li>
+            <p class="" ng-click=projectFilterClick('Personal')>Personal</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
         <div uib-carousel template-url="/src/projects/carousel.html" active="active" interval="myInterval">
           <div uib-slide ng-repeat="projectImage in projectImages | filter: projectImageFilter" index="$index">
             <img ng-if="!projectImage.video" src="{{projectImage.src}}" class="img-responsive" alt="{{projectImage.alt}}">
             <div ng-if="projectImage.video" class="embed-responsive embed-responsive-16by9 imageSpacingBottom">
               <iframe ng-if="projectImage.video" src="https://player.vimeo.com/video/8733915" class="embed-responsive-item " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
-            <!-- <div class="carousel-caption"> -->
-              <!-- <h4>Slide </h4> -->
-            <!-- </div> -->
           </div>
         </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container-fluid ">
+  <div class="row navbarSpacing">
+    <div class="affix col-xs-5 col-sm-3 col-md-3 col-lg-2 blackBoxBackground">
+      <h3 class="whiteFont hoverCursor" ng-click=projectFilterClick('Architecture') ng-class="{activeProject: projectImageFilter === 'Architecture'}"><b><big>Architecture</big></b></h3>
+      <h3 class="whiteFont hoverCursor" ng-click=projectFilterClick('Product') ng-class="{activeProject: projectImageFilter === 'Product'}"><b><big>Product</big></b></h3>
+      <h3 class="whiteFont hoverCursor" ng-click=projectFilterClick('Video') ng-class="{activeProject: projectImageFilter === 'Video'}")><b><big>Video</big></b></h3>
+      <h3 class="whiteFont hoverCursor" ng-click=projectFilterClick('Personal') ng-class="{activeProject: projectImageFilter === 'Personal'}"><b><big>Personal</big></b></h3>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div ng-repeat="projectImage in projectImages | filter: projectImageFilter">
+    <div class="row backgroundProjectImageMargin" ng-if="!projectImage.video" ng-style="{'background-image': 'url(' + projectImage.src + ')', 'background-size': 'cover'}">
+      <br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br /><br /> <br /> <br />
+    </div>
+    <div ng-if="projectImage.video" class="row">
+      <div ng-if="projectImage.video" class="col-xs-12 col-sm-12 col-md-9 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-2">
+        <iframe ng-if="projectImage.video" src="https://player.vimeo.com/video/8733915" class="embed-responsive-item " webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </div>
