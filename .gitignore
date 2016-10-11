@@ -9,3 +9,6 @@ client/bower_components
 
 # CSS
 client/style/css
+
+# Lib
+client/lib
