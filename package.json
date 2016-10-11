@@ -12,10 +12,12 @@
   "author": "Andrew Vye",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "helmet": "^2.3.0",
     "mailgun-js": "^0.7.12",
-    "node-sass": "^3.10.1"
+    "node-sass": "^3.10.1",
+    "sequelize": "^3.24.3"
   }
 }
