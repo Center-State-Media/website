@@ -1,5 +1,4 @@
 angular.module('app', [
-  'ui.bootstrap',
   'ui.router',
   'home',
   'projects',
