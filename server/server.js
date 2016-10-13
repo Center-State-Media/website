@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var helmet = require('helmet');
+var db = require('./database/config.js')
 // var mailgun = require('mailgun-js')({apiKey: process.env.mailgunApiKey, domain: process.env.mailgunDomain});
 
 var app = express();
@@ -40,8 +41,11 @@ app.get('/contactSubmit', function (req, res) {
 })
 
 
-// Start the server
-app.listen(port);
-console.log('Server started and listening on ' + port);
+// Start the server and the database
+db.sync().then(function () {
+  console.log('DB synced!');
+  app.listen(port);
+  console.log('Server started and listening on ' + port);
+})
 
 module.exports = app;

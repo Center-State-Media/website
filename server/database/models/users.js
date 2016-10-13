@@ -2,7 +2,7 @@ var Sequelize = require('sequelize');
 var sequelize = require('../config.js');
 var bcrypt = require('bcrypt');
 
-var User = sequelize.define('user', {
+var User = sequelize.define('User', {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
@@ -27,3 +27,5 @@ var User = sequelize.define('user', {
     defaultValue: false
   }
 })
+
+module.exports = User;
