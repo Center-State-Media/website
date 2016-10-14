@@ -11,55 +11,55 @@ angular.module('projects', [
 
   $scope.projectImages = [
     {
-      src: '../../src/assets/BrixPix-2.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'A picture',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: '../../src/assets/BrixPix-3.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'A picture',
       keyword: 'Product',
       video: false
     },
     {
-      src: '../../src/assets/BrixPix-2.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'A picture',
       keyword: 'Video',
       video: true
     },
     {
-      src: '../../src/assets/BrixPix-3.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'Another picture',
       keyword: 'Personal',
       video: false
     },
     {
-      src: '../../src/assets/BrixPix-2.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'A picture',
       keyword: 'Product',
       video: false
     },
     {
-      src: '../../src/assets/BrixPix.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'A picture',
       keyword: 'Video',
       video: true
     },
     {
-      src: '../../src/assets/BrixPix-3.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'Another picture',
       keyword: 'Personal',
       video: false
     },
     {
-      src: '../../src/assets/BrixPix-3.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'A picture',
       keyword: 'Product',
       video: false
     },
     {
-      src: '../../src/assets/BrixPix-3.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
       alt: 'Another picture',
       keyword: 'Personal',
       video: false

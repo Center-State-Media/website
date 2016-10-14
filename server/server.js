@@ -6,10 +6,6 @@ var helmet = require('helmet');
 
 var app = express();
 
-// authInfo.user = process.env.user
-// authInfo.mailgunApiKey = process.env.mailgunApiKey
-// authInfo.mailgunDomain = process.env.mailgunDomain
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(helmet());
