@@ -21,22 +21,21 @@ var port = process.env.PORT || 3000;
 app.use(express.static(__dirname+'/../client'));
 
 app.get('/contactSubmit', function (req, res) {
-  console.log(req.query);
   // Create the email mailgun will send
-  // var data = {
-  //   from: 'Contact Request <me@samples.mailgun.org>',
-  //   to: process.env.user,
-  //   subject: 'New contact request from ' + req.query.contactName + ' at ' + req.query.contactCompany,
-  //   text: 'Email me at ' + req.query.contactEmail + '\n' + 'I am interested in: ' + req.query.contactDescription
-  // };
-  //
-  // mailgun.messages().send(data, (error, body) => {
-  //   if (error) {
-  //     res.end('Message Error')
-  //   } else {
-  //     res.end('Message Sent');
-  //   }
-  // });
+  var data = {
+    from: 'Contact Request <me@samples.mailgun.org>',
+    to: process.env.userToEmail,
+    subject: 'New contact request from ' + req.query.contactName,
+    text: 'Email me at ' + req.query.contactEmail + '\n' + 'Call me at ' + req.query.contactPhone + ' \n' + 'I am interested in: ' + req.query.contactDescription
+  };
+
+  mailgun.messages().send(data, function (error, body) {
+    if (error) {
+      res.end('Message Error')
+    } else {
+      res.end('Message Sent');
+    }
+  });
   res.end('Message Sent');
 })
 
