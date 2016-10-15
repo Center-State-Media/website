@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "sass": "node-sass client/style/scss/main.scss client/style/css/style.css",
-    "postinstall": "npm run sass && bower install",
+    "postinstall": "npm run sass",
     "start": "node ./server/server.js"
   },
   "author": "Andrew Vye",
