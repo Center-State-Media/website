@@ -11,44 +11,62 @@ angular.module('projects', [
 
   $scope.projectImages = [
     {
-      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/interior1.jpg',
-      alt: 'Interior 1',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/tourOfHomes1.jpg',
+      alt: 'Tour of Homes 1',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/interior2.jpg',
-      alt: 'Interior 2',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/tourOfHomes2.jpg',
+      alt: 'Tour of Homes 2',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/zillha+winery1.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/zillahWinery.jpg',
       alt: 'Zillah Winery',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'A picture',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/tourOfHomes3.jpg',
+      alt: 'Tour of Homes 3',
+      keyword: 'Architecture',
+      video: false
+    },
+    {
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/baleBreakerCans.jpg',
+      alt: 'Bale Breaker Cans',
       keyword: 'Product',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'A picture',
-      keyword: 'Video',
-      video: true
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/baleBreakerDrone.jpg',
+      alt: 'Bale Breaker Drone',
+      keyword: 'Product',
+      video: false
     },
     {
-      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/Berkshire+Canvas+Photos.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/vineyard.jpg',
+      alt: 'Vineyard',
+      keyword: 'Product',
+      video: false
+    },
+    // {
+    //   src: 'https://d1usweb7g8r3t1.cloudfront.net/',
+    //   alt: 'A picture',
+    //   keyword: 'Video',
+    //   video: true
+    // },
+    {
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/Rams.jpg',
       alt: 'Rams',
       keyword: 'Personal',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'Vineyard',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/Cambodia.jpg',
+      alt: 'Cambodia',
       keyword: 'Personal',
       video: false
     }
