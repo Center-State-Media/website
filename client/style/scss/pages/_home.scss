@@ -14,7 +14,7 @@
 }
 
 .hero {
-  background: url('https://s3-us-west-2.amazonaws.com/center-state-media/15.jpg');
+  background: url('https://d1usweb7g8r3t1.cloudfront.net/hero.jpg');
   background-size: cover;
   height: 100vh;
   background-repeat:no-repeat;
@@ -30,21 +30,21 @@
 }
 
 .backgroundFirstImage {
-  background-image: url("https://s3-us-west-2.amazonaws.com/center-state-media/IMG_7875.jpg");
+  background-image: url("https://d1usweb7g8r3t1.cloudfront.net/homePageHome.jpg");
   background-size: cover;
   background-repeat:no-repeat;
   background-position:center;
 }
 
 .backgroundSecondImage {
-  background-image: url("https://s3-us-west-2.amazonaws.com/center-state-media/IMG_9312.jpg");
+  background-image: url("https://d1usweb7g8r3t1.cloudfront.net/handfulOfHops.jpg");
   background-size: cover;
   background-repeat:no-repeat;
   background-position:center;
 }
 
 .backgroundThirdImage {
-  background-image: url("https://s3-us-west-2.amazonaws.com/center-state-media/IMG_6107.jpg");
+  background-image: url("https://d1usweb7g8r3t1.cloudfront.net/solarSpiritsHome.jpg");
   background-size: cover;
   background-repeat:no-repeat;
   background-position:center;
@@ -53,6 +53,11 @@
 .homePageCalloutText {
   margin-top: 20%;
   margin-bottom: 20%;
+}
+
+.homePageCalloutButton {
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 .backgroundColorFirst {
