@@ -11,8 +11,20 @@ angular.module('projects', [
 
   $scope.projectImages = [
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'A picture',
+      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/interior1.jpg',
+      alt: 'Interior 1',
+      keyword: 'Architecture',
+      video: false
+    },
+    {
+      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/interior2.jpg',
+      alt: 'Interior 2',
+      keyword: 'Architecture',
+      video: false
+    },
+    {
+      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/zillha+winery1.jpg',
+      alt: 'Zillah Winery',
       keyword: 'Architecture',
       video: false
     },
@@ -29,38 +41,14 @@ angular.module('projects', [
       video: true
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'Another picture',
+      src: 'https://s3-us-west-2.amazonaws.com/center-state-media/Berkshire+Canvas+Photos.jpg',
+      alt: 'Rams',
       keyword: 'Personal',
       video: false
     },
     {
       src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'A picture',
-      keyword: 'Product',
-      video: false
-    },
-    {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'A picture',
-      keyword: 'Video',
-      video: true
-    },
-    {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'Another picture',
-      keyword: 'Personal',
-      video: false
-    },
-    {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'A picture',
-      keyword: 'Product',
-      video: false
-    },
-    {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/BrixPix-3.jpg',
-      alt: 'Another picture',
+      alt: 'Vineyard',
       keyword: 'Personal',
       video: false
     }
