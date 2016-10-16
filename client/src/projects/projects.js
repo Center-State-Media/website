@@ -11,43 +11,43 @@ angular.module('projects', [
 
   $scope.projectImages = [
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/tourOfHomes1.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/architecture/tourOfHomes1.jpg',
       alt: 'Tour of Homes 1',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/tourOfHomes2.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/architecture/tourOfHomes2.jpg',
       alt: 'Tour of Homes 2',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/zillahWinery.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/architecture/zillahWinery.jpg',
       alt: 'Zillah Winery',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/tourOfHomes3.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/architecture/tourOfHomes3.jpg',
       alt: 'Tour of Homes 3',
       keyword: 'Architecture',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/baleBreakerCans.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/product/baleBreakerCans.jpg',
       alt: 'Bale Breaker Cans',
       keyword: 'Product',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/baleBreakerDrone.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/product/baleBreakerDrone.jpg',
       alt: 'Bale Breaker Drone',
       keyword: 'Product',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/vineyard.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/product/vineyard.jpg',
       alt: 'Vineyard',
       keyword: 'Product',
       video: false
@@ -59,14 +59,20 @@ angular.module('projects', [
     //   video: true
     // },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/Rams.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/personal/Rams.jpg',
       alt: 'Rams',
       keyword: 'Personal',
       video: false
     },
     {
-      src: 'https://d1usweb7g8r3t1.cloudfront.net/Cambodia.jpg',
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/personal/Cambodia.jpg',
       alt: 'Cambodia',
+      keyword: 'Personal',
+      video: false
+    },
+    {
+      src: 'https://d1usweb7g8r3t1.cloudfront.net/personal/Ocean.jpg',
+      alt: 'Ocean',
       keyword: 'Personal',
       video: false
     }
